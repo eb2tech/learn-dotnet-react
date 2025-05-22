@@ -1,0 +1,83 @@
+# .NET build artifacts
+bin/
+obj/
+out/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# ASP.NET HTTPS development certificates
+*.pfx
+*.pem
+*.key
+
+# Visual Studio files
+.vs/
+.vscode/
+*.code-workspace
+
+# User-specific files
+*.swp
+*.tmp
+*.log
+
+# Rider files
+.idea/
+
+# Build results
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+build/
+bld/
+[Bb]in/
+[Oo]bj/
+
+# NuGet packages
+*.nupkg
+*.snupkg
+.nuget/
+packages/
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
+# NPM/Yarn/PNPM
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Vite/React build output
+dist/
+build/
+
+# TypeScript
+*.tsbuildinfo
+
+# Environment files
+.env
+.env.*
+
+# Mac/Linux system files
+.DS_Store
+Thumbs.db
+
+# Local certificates (used by Vite/ASP.NET dev certs)
+*.crt
+*.csr
+
+# Coverage reports
+coverage/
+lcov-report/
+*.lcov
+
+# IDE launch configs
+launch.json
+tasks.json
+
+# Others
+*.orig
