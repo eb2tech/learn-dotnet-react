@@ -1,5 +1,14 @@
 var builder = DistributedApplication.CreateBuilder(args);
 
-builder.AddProject<Projects.learn_dotnet_react_Server>("learn-dotnet-react-server");
+var server = builder.AddProject<Projects.learn_dotnet_react_Server>("server")
+                    .WithExternalHttpEndpoints();
+
+builder.AddNpmApp("reactvite", "../learn-dotnet-react.client")
+       .WithReference(server)
+       .WaitFor(server)
+       .WithEnvironment("BROWSER", "none")
+       .WithHttpEndpoint(env: "VITE_PORT")
+       .WithExternalHttpEndpoints()
+       .PublishAsDockerFile();
 
 builder.Build().Run();
