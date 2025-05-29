@@ -1,0 +1,8 @@
+<Solution>
+  <Project Path="learn-dotnet-react.AppHost/learn-dotnet-react.AppHost.csproj" />
+  <Project Path="learn-dotnet-react.client/learn-dotnet-react.client.esproj">
+    <Build />
+  </Project>
+  <Project Path="learn-dotnet-react.Server/learn-dotnet-react.Server.csproj" />
+  <Project Path="learn-dotnet-react.ServiceDefaults/learn-dotnet-react.ServiceDefaults.csproj" />
+</Solution>
