@@ -1,8 +1,13 @@
 var builder = DistributedApplication.CreateBuilder(args);
 
 var server = builder.AddProject<Projects.learn_dotnet_react_Server>("server")
-                    .WithUrl("/swagger", "Swagger")
+                    .WithSwaggerUI()
                     .WithUrlForEndpoint("https", url =>
+                    {
+                        url.DisplayText = "Swagger (https)";
+                        url.Url = "/swagger";
+                    })
+                    .WithUrlForEndpoint("http", url =>
                     {
                         url.DisplayText = "Swagger";
                         url.Url = "/swagger";

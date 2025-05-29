@@ -5,4 +5,5 @@
   </Project>
   <Project Path="learn-dotnet-react.Server/learn-dotnet-react.Server.csproj" />
   <Project Path="learn-dotnet-react.ServiceDefaults/learn-dotnet-react.ServiceDefaults.csproj" />
+  <Project Path="SwaggerUi.Aspire.Hosting/SwaggerUi.Aspire.Hosting.csproj" />
 </Solution>
