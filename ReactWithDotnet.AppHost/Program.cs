@@ -1,5 +1,13 @@
 var builder = DistributedApplication.CreateBuilder(args);
 
-builder.AddProject<Projects.ReactWithDotnet_Server>("reactwithdotnet-server");
+var weatherApi = builder.AddProject<Projects.ReactWithDotnet_Server>("server")
+                        .WithExternalHttpEndpoints();
+
+builder.AddNpmApp("client", "../reactwithdotnet.client")
+       .WithReference(weatherApi)
+       .WaitFor(weatherApi)
+       .WithHttpsEndpoint(env: "PORT")
+       .WithExternalHttpEndpoints()
+       .PublishAsDockerFile();
 
 builder.Build().Run();

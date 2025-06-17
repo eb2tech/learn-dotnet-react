@@ -34,7 +34,7 @@ if (!fs.existsSync(certFilePath) || !fs.existsSync(keyFilePath)) {
     }
 }
 
-const target = env["services__reactwithdotnet-server__https__0"] ?? 'https://localhost:7266';
+const target = env["services__server__https__0"] ?? 'https://localhost:7266';
 
 // https://vitejs.dev/config/
 export default defineConfig({

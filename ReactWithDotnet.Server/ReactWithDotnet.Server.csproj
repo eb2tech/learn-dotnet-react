@@ -14,9 +14,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\reactwithdotnet.client\reactwithdotnet.client.esproj">
-      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
-    </ProjectReference>
     <ProjectReference Include="..\ReactWithDotnet.ServiceDefaults\ReactWithDotnet.ServiceDefaults.csproj" />
   </ItemGroup>
 
