@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReactWithDotnet.AppHost", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReactWithDotnet.ServiceDefaults", "ReactWithDotnet.ServiceDefaults\ReactWithDotnet.ServiceDefaults.csproj", "{14D6DC2E-EDE2-474C-B026-C07974BEE414}"
 EndProject
+Project("{54A90642-561A-4BB1-A94E-469ADEE60C69}") = "reactwithdotnet.client", "reactwithdotnet.client\reactwithdotnet.client.esproj", "{951DBECF-5B00-D5ED-E32F-769395350FA1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,12 @@ Global
 		{14D6DC2E-EDE2-474C-B026-C07974BEE414}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{14D6DC2E-EDE2-474C-B026-C07974BEE414}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{14D6DC2E-EDE2-474C-B026-C07974BEE414}.Release|Any CPU.Build.0 = Release|Any CPU
+		{951DBECF-5B00-D5ED-E32F-769395350FA1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{951DBECF-5B00-D5ED-E32F-769395350FA1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{951DBECF-5B00-D5ED-E32F-769395350FA1}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{951DBECF-5B00-D5ED-E32F-769395350FA1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{951DBECF-5B00-D5ED-E32F-769395350FA1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{951DBECF-5B00-D5ED-E32F-769395350FA1}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
