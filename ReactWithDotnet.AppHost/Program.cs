@@ -1,5 +1,7 @@
 var builder = DistributedApplication.CreateBuilder(args);
 
+builder.AddDockerComposeEnvironment("docker-compose");
+
 var weatherApi = builder.AddProject<Projects.ReactWithDotnet_Server>("server")
                         .WithExternalHttpEndpoints();
 
@@ -8,6 +10,6 @@ builder.AddNpmApp("client", "../reactwithdotnet.client")
        .WaitFor(weatherApi)
        .WithHttpsEndpoint(env: "VITE_PORT")
        .WithExternalHttpEndpoints()
-       .PublishAsDockerFile();
+       /*.PublishAsDockerFile()*/;
 
 builder.Build().Run();
