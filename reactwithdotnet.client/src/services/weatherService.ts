@@ -7,7 +7,7 @@ const rpc = {
     method: string,
     data: Uint8Array
   ): Promise<Uint8Array> {
-    const response = await fetch(`http://localhost:7214/${service}/${method}`, {
+    const response = await fetch(`${service}/${method}`, {
       method: 'POST',
       body: data,
       headers: {

@@ -19,6 +19,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\ReactWithDotnet.Server\ReactWithDotnet.Server.csproj" />
+    <ProjectReference Include="..\reactwithdotnet.client\reactwithdotnet.client.esproj" />
   </ItemGroup>
 
   <Target Name="RestoreNpm" BeforeTargets="Build" Condition=" '$(DesignTimeBuild)' != 'true' ">
