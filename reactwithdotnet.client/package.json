@@ -8,15 +8,20 @@
     "start": "vite",
     "build": "tsc -b && vite build",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "generate-proto": "protoc --plugin=protoc-gen-ts_proto=.\\node_modules\\.bin\\protoc-gen-ts_proto.cmd -I=../protos weather.proto --ts_proto_out=./src/generated --ts_proto_opt=esModuleInterop=true,env=node,useOptionals=messages"
   },
   "dependencies": {
+    "@grpc/grpc-js": "^1.9.13",
+    "google-protobuf": "^3.21.2",
     "react": "^19.1.0",
     "react-dom": "^19.1.0"
   },
   "devDependencies": {
-    "@bufbuild/protobuf": "^1.10.0",
-    "@connectrpc/connect-web": "^1.7.0",
+    "@types/google-protobuf": "^3.15.12",
+    "protoc-gen-grpc-web": "^1.4.2",
+    "@bufbuild/protobuf": "^2.8.0",
+    "@connectrpc/connect-web": "^2.1.0",
     "@eslint/js": "^9.25.0",
     "@types/node": "^22",
     "@types/react": "^19.1.2",
