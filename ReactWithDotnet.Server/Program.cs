@@ -1,5 +1,3 @@
-using ReactWithDotnet.Server.Services;
-
 var builder = WebApplication.CreateBuilder(args);
 
 builder.AddServiceDefaults();
@@ -7,7 +5,6 @@ builder.AddServiceDefaults();
 // Add services to the container.
 
 builder.Services.AddControllers();
-builder.Services.AddGrpc();
 builder.Services.AddProblemDetails();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
@@ -31,7 +28,6 @@ app.UseHttpsRedirection();
 app.UseAuthorization();
 
 app.MapControllers();
-app.MapGrpcService<WeatherForecastService>();
 
 app.MapFallbackToFile("/index.html");
 app.MapDefaultControllerRoute();
