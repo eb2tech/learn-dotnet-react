@@ -9,7 +9,6 @@ builder.AddNpmApp("client", "../reactwithdotnet.client")
        .WaitFor(weatherApi)
        .WithHttpsEndpoint(env: "VITE_PORT")
        .WithExternalHttpEndpoints()
-       .WithOtlpExporter()
-       .PublishAsDockerFile();
+       .WithOtlpExporter();
 
 builder.Build().Run();
