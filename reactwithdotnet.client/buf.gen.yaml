@@ -1,0 +1,17 @@
+﻿version: v1
+plugins:
+  - plugin: ts_proto
+    out: src/generated
+    opt:
+      - esModuleInterop=true
+      - env=browser
+      - outputServices=generic-definitions
+      - useExactTypes=true
+      - useDate=true
+      - removeEnumPrefix=true
+      - stringEnums=true
+  - plugin: es
+    out: src/generated
+    opt:
+      - target=ts
+      - import_extension=.js
